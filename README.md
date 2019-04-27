@@ -1,3 +1,2 @@
-# A thing
-
+# Buildable autodoc
 Convience stuff
