@@ -1,0 +1,35 @@
+[
+  {
+    "type": "furniture",
+    "id": "f_metal_frame",
+    "name": "Metal frame",
+    "description": "A metal frame, a basis for advanced constructs",
+    "symbol": "#",
+    "color": "gray",
+    "move_cost_mod": -1,
+	"required_str": -1,
+    "flags": [ "TRANSPARENT", "NOITEM", "PERMEABLE", "THIN_OBSTACLE" ]
+},
+  {
+    "type": "furniture",
+    "id": "f_stationary_robot",
+    "name": "Stationary robot frame",
+    "description": "A stationary robot frame, with proper software and parts you could probally make something out of it",
+    "symbol": "=",
+    "color": "gray",
+    "move_cost_mod": -1,
+	"required_str": -1,
+    "flags": [ "TRANSPARENT", "NOITEM", "PERMEABLE", "THIN_OBSTACLE" ]	
+},
+  {
+    "type": "furniture",
+    "id": "f_inactive_autodoc",
+    "name": "Inactive autodoc",
+    "description": "An autodoc, but its screen is blank",
+    "symbol": "^",
+    "color": "gray",
+    "move_cost_mod": -1,
+	"required_str": -1,
+    "flags": [ "TRANSPARENT", "NOITEM", "PERMEABLE", "THIN_OBSTACLE" ]
+}
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "type": "construction",
+    "description": "Build a metal frame",
+    "category": "FURN",
+	"//": "Build a metal frame",
+    "required_skills": [ [ "fabrication", 5 ] ],
+    "time": 120,
+	"tools": [ [ [ "con_mix", 50 ] ] ],
+	"components": [
+	[ [ "concrete", 4 ] ], [ [ "frame", 1 ], [ "pipe", 8 ] ] 
+	],
+    "pre_special": "check_empty",
+    "post_terrain":"f_metal_frame"
+  },
+    {
+    "type": "construction",
+    "description": "Build a stationary robot",
+    "category": "FURN",
+	"//": "Build a stationary robot. With right parts, it can be used to make usefull stuff",
+    "required_skills": [ [ "electronics", 5 ],[ "fabrication", 5 ] ],
+    "time": 240,
+	"qualities":       
+	  [ 
+	  { "id": "WRENCH", "level": 2 } ,
+      { "id": "DRILL", "level": 1 } 
+	  ],
+	"components": [ [ [ "processor", 3 ] ], [ [ "RAM", 3 ] ], [ [ "circuit", 3 ] ], [ [ "sheet_metal", 4 ] ] ],
+    "pre_terrain": "f_metal_frame",
+    "post_terrain":"f_stationary_robot"
+  },
+      {
+    "type": "construction",
+    "description": "Convert stationary robot into medical model",
+    "category": "FURN",
+	"//": "Add various neccesary bits to the robot frame for medical designation, after that it will only need programming",
+    "required_skills": [ [ "fabrication", 5 ] ],
+    "time": 120,
+	"qualities":       
+	  [ 
+	  { "id": "WRENCH", "level": 2 } 
+	  ],
+	"tools": [ [ [ "oxy_torch", 10 ], [ "welder", 50 ], [ "welder_crude", 75 ], [ "toolset", 75 ] ] ],
+	"components": [
+	[ [ "scalpel", 1 ] ], [ [ "syringe", 1 ] ], [ [ "pipe", 4 ] ], [ [ "plut_cell", 5 ] ]
+	],
+    "pre_terrain": "f_stationary_robot",
+    "post_terrain":"f_inactive_autodoc"
+  },
+  {
+    "type": "construction",
+    "description": "Program an autodoc",
+    "category": "FURN",
+	"//": "Use a control laptop and medical software to program an autodoc",
+    "required_skills": [ [ "computer", 5 ] ],
+    "time": 120,
+	"tools": [ 
+	[ [ "control_laptop", 50 ] ] 
+	],
+	"components": [
+	[ [ "software_medical", 1 ] ]
+	],
+    "pre_terrain": "f_inactive_autodoc",
+    "post_terrain":"f_autodoc"
+  },
+  {
+    "type": "construction",
+    "description": "Build autodoc couch",
+    "category": "FURN",
+	"//": "make a couch for your autodoc",
+	"required_skills": [ [ "fabrication", 4 ], [ "tailor", 3 ] ],
+    "time": 100,
+    "qualities": [ [ { "id": "HAMMER", "level": 2 } ], [ { "id": "SAW_W", "level": 1 } ] ],
+    "components": [ [ [ "2x4", 12 ] ], [ [ "nail", 10 ] ], [ [ "blanket", 1 ], [ "down_blanket", 1 ], [ "fur_blanket", 1 ] ] 
+	],
+    "pre_special": "check_empty",
+    "post_terrain": "f_autodoc_couch"
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "type": "MOD_INFO",
+    "ident": "Buildableautodoc",
+    "name": "Buildable autodoc",
+    "authors": [ "Triel" ],
+    "description": "Allows you to build a autodoc",
+    "category": "content",
+    "dependencies": [ "dda" ]
+  }
+]
